@@ -3,18 +3,20 @@ body, html {
 }
 
 #canvasContainer {
-    height: 80%;
+    height: 100%;
     position: relative;
     overflow: hidden;
-
+    background: rgba(71,61,148,1);
 }
 
 canvas {
     /*display: none;*/
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
-    z-index: -1
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -23,21 +25,183 @@ canvas {
      top: 50%;
      transform: translateY(-50%);
      width: 100%;
+     z-index: 20;
+
 }
 
 .canvasContentContainer .canvasContent {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
+    color: white;
+}
+
+.canvasContent p {
+    line-height: 2em;
+    text-align: justify;
+}
+
+.canvasContent ul {
+    list-style-type: none;
+    overflow: auto;
+}
+
+.canvasContent ul li {
+    float: left;
+}
+
+.canvasContent ul li a {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 13px;
+    font-size: 13px;
+    /*background: white;*/
+    /*color: #473d94;*/
+
+    color: white;
+    border: 2px solid white;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.highlight-word {
+    /*background: #df9fb7;*/
+    /*background: white;*/
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    padding: 4px;
 }
 
 #contentContainer {
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    position: relative;
+    /*-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-    padding: 40px; 
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);*/
+    padding: 40px;
+    z-index: 20;
 }
+
+#logo {
+    width: 60px;
+    top: 200
+}
+
+
+.projectNotify {
+    margin-top: 80px;
+}
+
+.projectNotify p {
+    text-align: center;
+}
+
+.projectText {
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 3px;;
+}
+
+.projectPointer {
+    font-size: 3em;
+    position: relative;
+}
+
 
 .content {
     width: 500px;
     margin: 0 auto;
+}
+
+.content h1 {
+    color: #473d94
+}
+
+
+.post {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.post ul {
+    list-style-type: none;
+}
+
+.post ul li {
+    float: left;
+    padding: 5px;
+}
+
+.post ul li:first-child {
+    background-color: #f6d624;
+    margin-right: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: 12px;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-2 {
+	background: #df9fb7;
+	color: #fff;
+	box-shadow: 0 6px #995c73;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+/* Button 2a */
+.btn-2a {
+	border-radius: 0 0 5px 5px;
+}
+
+.btn-2a:hover {
+	box-shadow: 0 6px #995c73;
+	top: 2px;
+}
+
+.btn-2a:active {
+	box-shadow: 0 6px #995c73;
+	top: 6px;
+}
+
+
+/* Button 2c */
+.btn-2c {
+	border-radius: 5px;
+}
+
+.btn-2c:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btn-2c:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
 }

@@ -7,9 +7,11 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="./bower_components/skeleton/css/normalize.css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="./bower_components/skeleton/css/skeleton.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome-min.css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="./css/styles.css" media="screen" title="no title" charset="utf-8">
 	<style>
 	</style>
+	<script src="./bower_components/jquery/dist/jquery.js"></script>
 	<script src="./js/three.js"></script>
 	<script src="./js/Projector.js"></script>
 	<script src="./js/CanvasRenderer.js"></script>
@@ -22,21 +24,57 @@
 		<div id="canvasContainer">
 			<div class="canvasContentContainer">
 				<div class="canvasContent">
-					<h1>I'm Jeremy Arimado</h1>
+					<img id="logo" src="./images/logo-me.gif"/>
+					<h2> I'm Jeremy Arimado </h2>
 
-					<p> I'm a web-developer with an affinity for coding in JavaScript stacks and eating pork rib racks.
+					<p> I'm a Sydney-based <span class="highlight-word">Full-stack web-developer</span> with an affinity for coding in <span class="highlight-word"> JavaScript</span> stacks.
 
-						I dream of a world where people can fly, cars can think and everyone is friends. I want to write software to help get us there! </p>
+						I dream of a world where people can fly, cars can think and <span class="highlight-word"> everyone is friends with each other ❤.</span>  I want to build amazing products to help get us there! Let's build them together! </p>
+
+				   <ul>
+					   <li><a href="#"> Github </a> </li>
+					   <li><a href="#">LinkedIn </a></li>
+					   <li><a href="#">Resume </a></li>
+					   <li><a href="#">Contact </a></li>
+					   <li><a href="#">About me!</a></li>
+				   </ul>
+
+				   <div class="projectNotify">
+					   <p class="projectText"> Projects </p>
+					   <p class="projectPointer"> <span class="pointer">  👇 </span></p>
+				   </div>
+
 				</div>
 			</div>
 		</div>
 		<div id="contentContainer">
+			<div class="content">
+				<div class="post">
+					<img src="./images/phone.png"/>
+					<h1>Squadrawn</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<ul>
+						<li>JavaScript</li>
+						<li>Node.js</li>
+						<li>React Native</li>
+						<li>Redux</li>
+						<li>ES6</li>
+					</ul>
+				</div>
+			</div>
 
 			<div class="content">
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				<div class="post">
+					<h1>Frankie.js</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<ul>
+						<li>JavaScript</li>
+						<li>Node.js</li>
+						<li>React Native</li>
+						<li>Redux</li>
+						<li>ES6</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<script src="./js/main.js"></script>

@@ -37,7 +37,8 @@ function init() {
         for ( var i = 0; i < 500; i++ ) {
 
             var material = new THREE.SpriteCanvasMaterial( {
-                color: 0x808080,
+                // color: 0x808080,
+                color: 0xdf9fb7,
                 // color: Math.random() * 0x808008 + 0x808080,
                 program: program
             } );
@@ -46,7 +47,7 @@ function init() {
             particle.position.x = Math.random() * 2000 - 1000;
             particle.position.y = Math.random() * 2000 - 1000;
             particle.position.z = Math.random() * 1000 - 500;
-            particle.scale.x = particle.scale.y = Math.random() * 2 + 1;
+            particle.scale.x = particle.scale.y = Math.random() * 5 + 1;
             group.add( particle );
         }
     }
@@ -54,7 +55,7 @@ function init() {
     addParticlesToGroup( group );
     addParticlesToGroup( group2 );
 
-    renderer = new THREE.CanvasRenderer();
+    renderer = new THREE.CanvasRenderer({ alpha: true });
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
     renderer.setClearColor( 0xffffff, 0);
@@ -67,7 +68,7 @@ function init() {
     // stats = new Stats();
     // container.appendChild( stats.dom );
 
-    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+    // document.addEventListener( 'mousemove', onDocumentMouseMove, false );
     document.addEventListener( 'touchstart', onDocumentTouchStart, false );
     document.addEventListener( 'touchmove', onDocumentTouchMove, false );
     window.addEventListener( 'resize', onWindowResize, false );
@@ -145,3 +146,17 @@ function render() {
     renderer.render( scene, camera );
 
 }
+
+//
+
+
+function pointerLoop() {
+    $('.projectPointer').animate({'top': '20'}, {
+        duration: 700,
+        complete: function() {
+            $('.projectPointer').animate({'top': 0}, {
+                duration: 700,
+                complete: pointerLoop});
+        }});
+}
+pointerLoop();

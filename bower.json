@@ -16,5 +16,8 @@
   ],
   "dependencies": {
     "skeleton": "^2.0.4"
+  },
+  "devDependencies": {
+    "jquery": "^3.1.0"
   }
 }
