@@ -47,7 +47,7 @@ function init() {
             particle.position.x = Math.random() * 2000 - 1000;
             particle.position.y = Math.random() * 2000 - 1000;
             particle.position.z = Math.random() * 1000 - 500;
-            particle.scale.x = particle.scale.y = Math.random() * 5 + 1;
+            particle.scale.x = particle.scale.y = Math.random() * 3 + 1;
             group.add( particle );
         }
     }
@@ -148,15 +148,15 @@ function render() {
 }
 
 //
-
-
-function pointerLoop() {
-    $('.projectPointer').animate({'top': '20'}, {
-        duration: 700,
-        complete: function() {
-            $('.projectPointer').animate({'top': 0}, {
-                duration: 700,
-                complete: pointerLoop});
-        }});
-}
-pointerLoop();
+//
+//
+// function pointerLoop() {
+//     $('.projectPointer').animate({'top': '10'}, {
+//         duration: 700,
+//         complete: function() {
+//             $('.projectPointer').animate({'top': 0}, {
+//                 duration: 700,
+//                 complete: pointerLoop});
+//         }});
+// }
+// pointerLoop();

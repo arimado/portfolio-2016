@@ -2,6 +2,10 @@ body, html {
     height: 100%;
 }
 
+body {
+    /*background: #dfdfdf;*/
+}
+
 #canvasContainer {
     height: 100%;
     position: relative;
@@ -64,6 +68,10 @@ canvas {
     text-decoration: none;
 }
 
+.canvasContent .intro {
+    font-size: 1.2em;
+}
+
 .highlight-word {
     /*background: #df9fb7;*/
     /*background: white;*/
@@ -96,9 +104,7 @@ canvas {
 }
 
 .projectText {
-    font-size: 1.5em;
     font-weight: 100;
-    letter-spacing: 3px;;
 }
 
 .projectPointer {
@@ -112,32 +118,64 @@ canvas {
     margin: 0 auto;
 }
 
+.content p {
+    margin-bottom: 1em;
+}
+
 .content h1 {
     color: #473d94
 }
 
 
 .post {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     overflow: hidden;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 20px;
 }
 
-.post ul {
+.tags {
     list-style-type: none;
+    overflow: auto;
+    margin-bottom: 0;
 }
 
-.post ul li {
+.tags li {
     float: left;
     padding: 5px;
+    border-bottom: 2px solid #473d94;
+    margin-right: 10px;
 }
 
-.post ul li:first-child {
-    background-color: #f6d624;
+.tags li:first-child {
+    background-color: #473d94;
+    border-bottom: 2px solid #473d94;
     margin-right: 10px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
+.more {
+    list-style-type: none;
+    overflow: auto;
+    margin-top: 0;
+}
+
+.more li {
+    float: left;
+
+}
+
+.more li a {
+    display: block;
+    padding: 5px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
 
 /* General button style (reset) */
 .btn {
